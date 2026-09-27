@@ -1,23 +1,69 @@
 aid: axelspace
+
 name: Axelspace
-description: 'Axelspace is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: "Axelspace has been leading the space business industry as a pioneer of microsatellite technology since 2008. With the vision of “Space within Your Reach,” Axelspace is determined to demonstrate its continued leadership in the realization of an advanced society, offering satellite imagery, data services, and innovative space solutions to customers worldwide."
+
 url: https://raw.githubusercontent.com/api-evangelist/axelspace/refs/heads/main/apis.yml
+
+image: https://www.axelspace.com/assets/img/ogp/ogp.png
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- Space
+- Satellite
+- Imagery
+- Data Services
+- Innovation
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/axelspace-hosts.yml
+- type: PrivacyPolicy
+  url: https://www.axelspace.com/privacypolicy/
+- type: Newsroom
+  url: https://www.axelspace.com/news/
+- type: GitHubOrganization
+  url: https://github.com/axelspace
+- type: DomainSecurity
+  url: security/axelspace-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/axelspace
+  url: https://www.axelspace.com
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-09-27'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://equityzen.com/company/axelspace
+    status: 403
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
